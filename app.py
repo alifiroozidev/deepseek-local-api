@@ -17,13 +17,13 @@ import logging
 def install_dependencies():
     """Install required packages automatically"""
     packages = [
-        "torch==2.1.0",
-        "transformers==4.36.0", 
-        "accelerate==0.24.0",
-        "fastapi==0.104.1",
-        "uvicorn==0.24.0",
-        "pydantic==2.5.0",
-        "sse-starlette==1.6.5"
+        "torch",
+        "transformers", 
+        "accelerate",
+        "fastapi",
+        "uvicorn",
+        "pydantic",
+        "sse-starlette"
     ]
     
     print("🔧 Installing dependencies...")
@@ -40,6 +40,7 @@ def install_dependencies():
 try:
     import torch
     import transformers
+    import accelerate
     from fastapi import FastAPI, HTTPException
     from fastapi.responses import StreamingResponse
     from pydantic import BaseModel
@@ -51,6 +52,7 @@ except ImportError:
     # Re-import after installation
     import torch
     import transformers
+    import accelerate
     from fastapi import FastAPI, HTTPException
     from fastapi.responses import StreamingResponse
     from pydantic import BaseModel
