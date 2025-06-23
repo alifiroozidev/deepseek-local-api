@@ -2,7 +2,11 @@
 """
 DeepSeek R1 Web API - Complete Single File Application
 Auto-installs dependencies, loads model to GPU, provides streaming API
+the updated version
 """
+
+
+
 
 import os
 import sys
